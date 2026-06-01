@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TerVision — Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0A0A0A;
+      color: #F0E6D0;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    .logo {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 40px;
+    }
+    .logo-icon {
+      width: 48px; height: 48px;
+      background: #E8751A;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+    .logo-text { font-size: 28px; font-weight: 700; color: #D4A017; }
+    .lang-switch {
+      display: flex; gap: 12px; margin-bottom: 40px;
+    }
+    .lang-btn {
+      padding: 8px 20px; border-radius: 20px;
+      border: 1px solid #D4A017;
+      background: transparent; color: #D4A017;
+      cursor: pointer; font-size: 14px; font-weight: 600;
+      transition: all 0.2s;
+    }
+    .lang-btn.active { background: #D4A017; color: #000; }
+    .lang-btn:hover { background: #D4A017; color: #000; }
+    h1 { font-size: 32px; color: #D4A017; margin-bottom: 8px; }
+    .date { color: #888; font-size: 14px; margin-bottom: 40px; }
+    h2 {
+      font-size: 20px; color: #E8751A;
+      margin: 32px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #2A2A2A;
+    }
+    p { margin-bottom: 12px; color: #C8B090; }
+    ul { margin: 8px 0 16px 20px; }
+    li { color: #C8B090; margin-bottom: 6px; }
+    .highlight {
+      background: #1C1C1C;
+      border-left: 3px solid #D4A017;
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+    .highlight p { margin: 0; color: #F0E6D0; }
+    a { color: #D4A017; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 60px; padding-top: 20px;
+      border-top: 1px solid #2A2A2A;
+      color: #666; font-size: 13px; text-align: center;
+    }
+    .section { display: none; }
+    .section.active { display: block; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="logo">
+    <div class="logo-icon">🔍</div>
+    <div class="logo-text">TerVision</div>
+  </div>
+
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="showLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" onclick="showLang('fr')">🇫🇷 Français</button>
+  </div>
+
+  <!-- ── ENGLISH ── -->
+  <div class="section active" id="en">
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: June 1, 2026</p>
+
+    <div class="highlight">
+      <p>TerVision does not collect, store, or share any personal data. All your data stays on your device.</p>
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>TerVision ("the app") is a movie and series identification application developed by Giuliani. This Privacy Policy explains how the app handles your data.</p>
+
+    <h2>2. Data We Do NOT Collect</h2>
+    <p>TerVision does not collect:</p>
+    <ul>
+      <li>Personal identification information (name, email, phone number)</li>
+      <li>Location data</li>
+      <li>Usage analytics or behavioral data</li>
+      <li>Device identifiers</li>
+      <li>Photos or images taken with the camera</li>
+      <li>Payment information</li>
+    </ul>
+
+    <h2>3. Data Stored Locally on Your Device</h2>
+    <p>The following data is stored exclusively on your device using SQLite and is never transmitted:</p>
+    <ul>
+      <li>Your movie and series consultation history</li>
+      <li>Your favorites list</li>
+      <li>Your Watch Later list</li>
+      <li>Your personal ratings (0–10)</li>
+      <li>Your language and theme preferences</li>
+    </ul>
+    <p>This data can be deleted at any time by clearing the app data or uninstalling the app.</p>
+
+    <h2>4. Camera Usage</h2>
+    <p>TerVision uses your device camera to photograph TV screens and read movie or series titles. Images are processed locally on your device or sent to third-party AI services (Mistral AI, Google Gemini) solely for title recognition purposes. Images are not stored or used for any other purpose.</p>
+
+    <h2>5. Third-Party APIs</h2>
+    <p>TerVision connects to the following external services to retrieve movie information:</p>
+    <ul>
+      <li><strong>TMDB (The Movie Database)</strong> — movie data, ratings, recommendations</li>
+      <li><strong>OMDb API</strong> — IMDB, Rotten Tomatoes, Metacritic ratings</li>
+      <li><strong>Trakt.tv</strong> — community recommendations</li>
+      <li><strong>Mistral AI</strong> — AI-powered title recognition (fallback OCR)</li>
+      <li><strong>Google Gemini</strong> — AI-powered title recognition (fallback OCR)</li>
+    </ul>
+    <p>These services have their own privacy policies. Only the title text or image is sent to AI services — no personal data is included.</p>
+
+    <h2>6. No Advertising</h2>
+    <p>TerVision contains no advertising and does not use any advertising SDK or tracking library.</p>
+
+    <h2>7. No Account Required</h2>
+    <p>TerVision does not require account creation or user registration.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>TerVision does not knowingly collect any data from children under 13. The app contains no features directed at children.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at:<br>
+    <a href="mailto:giuliani.dispersion@gmail.com">contact@tervision.app</a></p>
+  </div>
+
+  <!-- ── FRANÇAIS ── -->
+  <div class="section" id="fr">
+    <h1>Politique de Confidentialité</h1>
+    <p class="date">Dernière mise à jour : 1er juin 2026</p>
+
+    <div class="highlight">
+      <p>TerVision ne collecte, ne stocke et ne partage aucune donnée personnelle. Toutes vos données restent sur votre appareil.</p>
+    </div>
+
+    <h2>1. Présentation</h2>
+    <p>TerVision (« l'application ») est une application d'identification de films et séries développée par Giuliani. Cette politique de confidentialité explique comment l'application traite vos données.</p>
+
+    <h2>2. Données que nous ne collectons PAS</h2>
+    <p>TerVision ne collecte pas :</p>
+    <ul>
+      <li>Données d'identification personnelle (nom, email, téléphone)</li>
+      <li>Données de localisation</li>
+      <li>Données d'usage ou comportementales</li>
+      <li>Identifiants d'appareils</li>
+      <li>Photos ou images prises avec la caméra</li>
+      <li>Informations de paiement</li>
+    </ul>
+
+    <h2>3. Données stockées localement sur votre appareil</h2>
+    <p>Les données suivantes sont stockées exclusivement sur votre appareil via SQLite et ne sont jamais transmises :</p>
+    <ul>
+      <li>Votre historique de films et séries consultés</li>
+      <li>Votre liste de favoris</li>
+      <li>Votre liste « À voir »</li>
+      <li>Vos notes personnelles (0 à 10)</li>
+      <li>Vos préférences de langue et de thème</li>
+    </ul>
+    <p>Ces données peuvent être supprimées à tout moment en vidant les données de l'application ou en la désinstallant.</p>
+
+    <h2>4. Utilisation de la caméra</h2>
+    <p>TerVision utilise la caméra de votre appareil pour photographier les écrans TV et lire les titres de films ou séries. Les images sont traitées localement ou envoyées à des services d'IA tiers (Mistral AI, Google Gemini) uniquement dans le but de reconnaître le titre. Les images ne sont ni stockées ni utilisées à d'autres fins.</p>
+
+    <h2>5. APIs tierces</h2>
+    <p>TerVision se connecte aux services externes suivants pour récupérer les informations sur les films :</p>
+    <ul>
+      <li><strong>TMDB (The Movie Database)</strong> — données films, notes, recommandations</li>
+      <li><strong>OMDb API</strong> — notes IMDB, Rotten Tomatoes, Metacritic</li>
+      <li><strong>Trakt.tv</strong> — recommandations communautaires</li>
+      <li><strong>Mistral AI</strong> — reconnaissance de titre par IA (OCR de secours)</li>
+      <li><strong>Google Gemini</strong> — reconnaissance de titre par IA (OCR de secours)</li>
+    </ul>
+    <p>Ces services ont leurs propres politiques de confidentialité. Seul le texte du titre ou l'image est envoyé aux services IA — aucune donnée personnelle n'est incluse.</p>
+
+    <h2>6. Pas de publicité</h2>
+    <p>TerVision ne contient aucune publicité et n'utilise aucun SDK publicitaire ni bibliothèque de suivi.</p>
+
+    <h2>7. Aucun compte requis</h2>
+    <p>TerVision ne nécessite pas de création de compte ni d'inscription.</p>
+
+    <h2>8. Confidentialité des enfants</h2>
+    <p>TerVision ne collecte sciemment aucune donnée concernant des enfants de moins de 13 ans. L'application ne contient aucune fonctionnalité destinée aux enfants.</p>
+
+    <h2>9. Modifications de cette politique</h2>
+    <p>Nous pouvons mettre à jour cette politique de confidentialité de temps en temps. Les modifications seront publiées sur cette page avec une date de mise à jour.</p>
+
+    <h2>10. Contact</h2>
+    <p>Pour toute question concernant cette politique de confidentialité, contactez-nous à :<br>
+    <a href="mailto:giuliani.dispersion@gmail.com">contact@tervision.app</a></p>
+  </div>
+
+  <footer>
+    <p>© 2026 Terrier Retroworks — All rights reserved</p>
+  </footer>
+
+</div>
+
+<script>
+  function showLang(lang) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+</body>
+</html>
